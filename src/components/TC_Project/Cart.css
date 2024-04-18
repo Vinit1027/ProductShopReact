@@ -1,0 +1,46 @@
+.bkpk{
+    padding: 60px 0px;
+    background-color: #F3EAD8;
+
+
+}
+
+
+.nopadunder{
+    margin-bottom: 0px;
+}
+
+.nounder{
+    text-decoration: none;
+    color: #74706B;
+}
+
+
+.padbetween3{
+    margin-top: 50px;
+}
+
+
+.allcov{
+    margin: 20px 0px;
+    padding: 30px 0px;
+    border-bottom: 1px solid black;
+    border-color: #dee2e6;
+}
+
+.macm{
+    margin-left: 30px;
+}
+
+.ladders{
+    border: 1px solid #eee;
+}
+
+.ladders2{
+    margin: 0px 12px;
+}
+
+.ladders3{
+    padding: 8px 16px;
+    border: 1px solid #eee;
+}

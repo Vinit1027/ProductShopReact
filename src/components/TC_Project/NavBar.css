@@ -1,0 +1,49 @@
+.pdbwee{
+    border-bottom:0.1px solid #74706B;;
+    /* box-shadow:0px 2px 32px 2px #74706B; */
+    border-radius: 2px;
+}
+
+.nav-link:hover{
+    color: #FF2020;
+}
+
+
+
+.ftclr{
+    color: #141517;
+    font-size: 16px;
+    font-family: "Jost",sans-serif;
+    font-weight: 600;
+    padding: 34px 21px;
+    text-transform: capitalize;
+}
+
+.ftclr2{
+    color: #141517;
+    font-size: 16px;
+    font-family: "Jost",sans-serif;
+    font-weight: 600;
+    padding: 34px 21px;
+    text-transform: capitalize;
+    margin-right: 50px;
+}
+
+.navbar-nav .nav-link.active{
+    color: #FF2020;
+}
+
+
+.navbar-nav .nav-link:hover{
+    color: #FF2020;
+}
+
+
+
+.crtsz{
+    font-size: 24px;
+}
+
+
+
+

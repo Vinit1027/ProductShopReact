@@ -1,0 +1,151 @@
+.bkpk{
+    padding: 60px 0px;
+    background-color: #F3EAD8;
+
+
+}
+
+
+.nopadunder{
+    margin-bottom: 0px;
+}
+
+.nounder{
+    text-decoration: none;
+    color: #74706B;
+}
+
+
+.padbetween11{
+    padding-top: 50px;
+}
+
+
+.single-services{
+    background-color: #FF2020;
+    padding: 29px 20px 29px 80px;
+}
+
+
+.prodimg{
+    background-image: url('./Images/Phones4.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+}
+
+
+.features-caption{
+    margin-left: 50px;
+}
+
+
+
+.features-caption h3{
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 9px;
+    font-weight: 400;
+    display: block;
+}
+
+
+.features-caption p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+
+.price2{
+    /* display: inline-block; */
+    margin-bottom: 20px;
+}
+
+.price2 span{
+    font-weight: 500;
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 9px;
+    display: block;
+}
+
+
+.prodcart{
+    background: #fff;
+    padding: 25px 36px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #222222;
+    border-radius: 25px;
+    line-height: 0;
+    cursor: pointer;
+    transition: 0.2s linear;
+    margin-right: 10px;
+    border-color: transparent;
+}
+
+
+.prodcart:hover{
+    background-color: #FF2020;
+    color: #fff;
+    box-shadow: 0px 3px 31px 2px rgba(207,207,207,0.7);
+
+}
+
+
+
+
+.prodshare{
+    border-radius: 50%;
+    padding: 12px 17px !important;
+    border: 1px solid #fff;
+    color: #fff;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.2s linear;
+}
+
+
+
+.prodshare:hover{
+    background-color: #fff;
+    color: #FF2020;
+
+}
+
+
+.padbetween12{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.padbetween12 .nav-link{
+    color: #292621;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    padding: 36px 12px;
+    padding-top: 0;
+    margin-right: 15px;
+}
+
+.padbetween12 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: #FF2020!important;
+    border-bottom: 4px solid #FF2020!important;
+    background: none!important;
+}
+
+.paramb{
+    margin-bottom: 40px;
+    padding-bottom: 0px;
+}
