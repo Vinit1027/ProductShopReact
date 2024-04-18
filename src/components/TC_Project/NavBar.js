@@ -12,10 +12,10 @@ function NavBar({size}) {
       <Navbar bg="white" variant="dark" className='pdbwee'>
         <Container>
           <Navbar.Brand to='/'>
-            <NavLink className='nav-link ftclr' to="/">Product Shop</NavLink>
+            <NavLink className='nav-link ftclr' to="/ProductShopReact">Product Shop</NavLink>
           </Navbar.Brand>
           <Nav className="mw-auto">
-            <NavLink className='nav-link ftclr2' to="/">Home</NavLink>
+            <NavLink className='nav-link ftclr2' to="/ProductShopReact">Home</NavLink>
             <NavLink className='nav-link ftclr2' to='/all'>All Products</NavLink>
             <NavLink className='nav-link ftclr2' to='/phones'>Phones</NavLink>
             <NavLink className='nav-link ftclr2' to="/laptops">Laptops</NavLink>

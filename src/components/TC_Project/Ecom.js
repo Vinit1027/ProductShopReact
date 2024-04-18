@@ -64,7 +64,7 @@ const Ecom = () => {
       <Router>
         <NavBar size={cart.length}/>
           <Routes>
-            <Route path='/' element={<MainPage data={data} HandleClick={HandleClick} setProd={setProd}/>}/>
+            <Route path='/ProductShopReact' element={<MainPage data={data} HandleClick={HandleClick} setProd={setProd}/>}/>
             <Route path='/all' element={<All data={data} warning={warning} HandleClick={HandleClick} setProd={setProd}/>}/>
             <Route ref={GetPh} path='/phones' element={<Phones data={data} warning={warning} HandleClick={HandleClick} setProd={setProd}/>}/>
             <Route path='/laptops' element={<Laptops data={data} warning={warning} HandleClick={HandleClick} setProd={setProd}/>}/>
