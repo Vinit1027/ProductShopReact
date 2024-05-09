@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ProductShopReact/static/css/main.cbac6f70.css",
-    "main.js": "/ProductShopReact/static/js/main.484ef98d.js",
+    "main.js": "/ProductShopReact/static/js/main.985a1471.js",
     "static/js/787.d8660377.chunk.js": "/ProductShopReact/static/js/787.d8660377.chunk.js",
     "static/media/Laptops.jpeg": "/ProductShopReact/static/media/Laptops.f616889de53ee5b914b3.jpeg",
     "static/media/SmpThumbnail.jpeg": "/ProductShopReact/static/media/SmpThumbnail.c7b86fc7fd2337b35d7c.jpeg",
@@ -10,11 +10,11 @@
     "static/media/Phone_charger.jpeg": "/ProductShopReact/static/media/Phone_charger.b139651343c11cb60236.jpeg",
     "index.html": "/ProductShopReact/index.html",
     "main.cbac6f70.css.map": "/ProductShopReact/static/css/main.cbac6f70.css.map",
-    "main.484ef98d.js.map": "/ProductShopReact/static/js/main.484ef98d.js.map",
+    "main.985a1471.js.map": "/ProductShopReact/static/js/main.985a1471.js.map",
     "787.d8660377.chunk.js.map": "/ProductShopReact/static/js/787.d8660377.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cbac6f70.css",
-    "static/js/main.484ef98d.js"
+    "static/js/main.985a1471.js"
   ]
 }
