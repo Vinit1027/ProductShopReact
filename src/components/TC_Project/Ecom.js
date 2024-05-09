@@ -16,11 +16,71 @@ const Ecom = () => {
 
   const [cart, setCart] = useState([]);
 
+  const [cart2, setCart2] = useState([]);
+
+  const [cartWithQuantity, setCartWithQuantity] = useState([]);
+
   const [prod, setProd] = useState([]);
 
   const [warning, setWarning] = useState(false);
 
   const GetPh = useRef()
+
+
+  console.log(cart)
+
+
+  useEffect(()=>{
+
+        setCart2(cart);
+
+
+        const initialCartWithQuantity = cart.map((item) => ({...item, quantity: 1, }));
+
+        setCartWithQuantity(initialCartWithQuantity);
+
+    },[cart])
+
+
+    const initialValue = 0;
+    const total = cartWithQuantity.reduce( (accumulator,current) => accumulator + current.price * current.quantity, initialValue);
+
+
+    const incrementQuantity = (element) => {
+
+        const updatedcart = cartWithQuantity.map((item)=>{
+
+            return item.id === element.id ? { ...item, quantity: item.quantity + 1 } : item
+
+        })
+
+        setCartWithQuantity(updatedcart)
+    };
+
+    const decrementQuantity = (element) => {
+
+        const updatedcart2 = cartWithQuantity.map((item)=>{
+
+            return item.id === element.id && item.quantity > 1 ? { ...item, quantity: item.quantity - 1 } : item
+        })
+        setCartWithQuantity(updatedcart2);
+    };
+
+
+    const handleRemove = (element)=> {
+
+        console.log(element)
+
+        const arr = cartWithQuantity.filter((x)=> x.id !== element.id);
+        setCartWithQuantity(arr)
+    }
+
+
+
+
+
+
+
 
   const HandleClick = (item)=> {
     let isPresent = false
@@ -40,9 +100,9 @@ const Ecom = () => {
   }
 
 
-  useEffect(()=> {
-    // console.log(cart)
-  }, [cart])
+  // useEffect(()=> {
+  //   // console.log(cart)
+  // }, [cart])
 
   useEffect(()=> {
     console.log(prod)
@@ -62,14 +122,14 @@ const Ecom = () => {
   return (
     <div>
       <Router>
-        <NavBar size={cart.length}/>
+        <NavBar size={cartWithQuantity.length}/>
           <Routes>
             <Route path='/ProductShopReact' element={<MainPage data={data} HandleClick={HandleClick} setProd={setProd}/>}/>
             <Route path='/all' element={<All data={data} warning={warning} HandleClick={HandleClick} setProd={setProd}/>}/>
             <Route ref={GetPh} path='/phones' element={<Phones data={data} warning={warning} HandleClick={HandleClick} setProd={setProd}/>}/>
             <Route path='/laptops' element={<Laptops data={data} warning={warning} HandleClick={HandleClick} setProd={setProd}/>}/>
             <Route path='/automotives' element={<Automotives data={data} warning={warning} HandleClick={HandleClick} setProd={setProd}/>}/>
-            <Route path='/cart' element={<Cart cart={cart} setCart={setCart}/>}/>
+            <Route path='/cart' element={<Cart cartWithQuantity={cartWithQuantity} total={total} incrementQuantity={incrementQuantity} decrementQuantity={decrementQuantity} handleRemove={handleRemove}/>}/>
             <Route path='/productdetails' element={<ProductDetails prod={prod} HandleClick={HandleClick}/>}/>
           </Routes>
       </Router>

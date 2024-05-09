@@ -3,71 +3,7 @@ import { NavLink } from 'react-router-dom'
 import './Cart.css'
 import Footer from './Footer';
 
-const Cart = ({cart, setCart}) => {
-
-    const [cart2, setCart2] = useState([]);
-
-    const [cartWithQuantity, setCartWithQuantity] = useState([]);
-
-    const [price, setPrice] = useState(0);
-
-    const [incdc, setIncdc] = useState(1)
-
-    useEffect(()=>{
-
-        setCart2(cart);
-
-
-        const initialCartWithQuantity = cart.map((item) => ({...item, quantity: 1, }));
-
-        setCartWithQuantity(initialCartWithQuantity);
-
-    },[])
-
-
-    const initialValue = 0;
-    const total = cartWithQuantity.reduce( (accumulator,current) => accumulator + current.price * current.quantity, initialValue);
-
-    const handlePrice = ()=> {
-        let ans = 0;
-        cart.map((item)=> {
-            ans += item.price 
-        })
-        setPrice(ans)
-    }
-
-
-    const incrementQuantity = (element) => {
-
-        const updatedcart = cartWithQuantity.map((item)=>{
-
-            return item.id === element.id ? { ...item, quantity: item.quantity + 1 } : item
-
-        })
-
-        setCartWithQuantity(updatedcart)
-    };
-
-    const decrementQuantity = (element) => {
-
-        const updatedcart2 = cartWithQuantity.map((item)=>{
-
-            return item.id === element.id && item.quantity > 1 ? { ...item, quantity: item.quantity - 1 } : item
-        })
-        setCartWithQuantity(updatedcart2);
-    };
-
-    useEffect(()=> {
-        handlePrice();
-    })
-
-    const handleRemove = (element)=> {
-
-        console.log(element)
-
-        const arr = cartWithQuantity.filter((x)=> x.id !== element.id);
-        setCartWithQuantity(arr)
-    }
+const Cart = ({ cartWithQuantity, total, incrementQuantity, decrementQuantity, handleRemove }) => {
 
   return (
     <section>
