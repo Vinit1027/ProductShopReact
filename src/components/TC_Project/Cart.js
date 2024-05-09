@@ -22,7 +22,7 @@ const Cart = ({cart, setCart}) => {
 
         setCartWithQuantity(initialCartWithQuantity);
 
-    },[cart])
+    },[])
 
 
     const initialValue = 0;
